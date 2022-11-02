@@ -1,0 +1,177 @@
+* {
+  /*
+  gray-100: #e4e6eb;
+  gray-300: #474d52;
+  black: #181a1e;
+  gray-400: #31353a;
+  gray-500: #25262c;
+  orange-100: #e2645c;
+  */
+  font-family: sans-serif;
+  color: #e4e6eb;
+
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #25262c;
+}
+
+.container {
+  padding: 40px;
+}
+
+header {
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  margin: 10px 0 40px 0;
+}
+
+main {
+  background-image: linear-gradient(to left, #121214, #323238);
+  padding: 40px;
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+ol {
+  padding: 0 18px;
+  line-height: 25px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  margin-top: 40px;
+}
+
+.numbers {
+  min-width: 400px;
+}
+
+.number {
+  display: grid;
+}
+
+.number label {
+  display: none;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background: #121214;
+  border-radius: 5px;
+  border: 2px solid #29292b;
+  font-size: 18px;
+  color: #e4e6eb;
+}
+
+/*Remover setas dos inputs number*/
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+select.operation {
+  font-size: 18px;
+  padding: 10px 20px;
+  color: #e4e6eb;
+  background: #121214;
+  border: 2px solid #29292b;
+  border-radius: 5px;
+  height: 41px;
+  border: none;
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+select.operation option {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: #e4e6eb;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  background: #0bf926;
+  color: #0c5515;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnClear {
+  padding: 10px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  border: 1px solid #0bf926;
+  color: #0bf926;
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btnClear:hover {
+  border: none;
+  border: 1px solid #14e42d;
+  background: #14e42d;
+  color: #0c5515;
+}
+
+.btn:hover {
+  background: #24df3a;
+}
+
+#resDanger {
+  margin-top: 0;
+}
+
+span {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0bf926;
+}
+
+/*Responsive*/
+@media (max-width: 800px) {
+  .container {
+    padding: 20px;
+  }
+
+  main {
+    padding-inline: 30px;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 40px;
+    margin-top: 40px;
+  }
+
+  select.operation {
+    width: 100%;
+    display: inline;
+    margin-bottom: 40px;
+  }
+}

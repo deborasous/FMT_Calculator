@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Calculadora</h1>
+        <p>Calcule números de forma fácil e rápida</p>
+      </header>
+      <main>
+        <ol>
+          <li>Digite o primeiro número</li>
+          <li>Digite o segundo número</li>
+          <li>Selecione o tipo de cálculo que deseja</li>
+          <li>Clique no botão para calcular</li>
+        </ol>
+        <div class="content">
+          <div class="numbers">
+            <div class="number">
+              <label for="number1">Primeiro número</label>
+              <input type="number" name="" id="number1" />
+            </div>
+            <div class="number">
+              <label for="number2">Segundo número</label>
+              <input type="number" name="" id="number2" />
+            </div>
+            <select class="operation" id="operation">
+              <option value="sun">Soma</option>
+              <option value="subtraction">Subtração</option>
+              <option value="multiplication">Multiplicação</option>
+              <option value="division">Divisão</option>
+              <option value="percentage">Porcentagem</option>
+            </select>
+            <div class="buttons">
+              <button type="submit" class="btn">Calcular</button>
+              <button type="submit" class="btnClear">Limpar</button>
+            </div>
+          </div>
+          <div>
+            <p id="resDanger">O resultado será exibido aqui.</p>
+            <span id="result">0</span>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
